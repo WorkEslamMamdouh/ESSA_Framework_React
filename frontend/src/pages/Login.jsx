@@ -8,7 +8,7 @@ const[p,setP]=useState("");
 
 const go=async()=>{
 const r=await api.post("auth/login",{username:u,password:p});
-localStorage.setItem("t",r.data.token);
+localStorage.setItem("t",r.data.token); 
 location="/app";
 };
 
